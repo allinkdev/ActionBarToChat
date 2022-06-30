@@ -1,0 +1,28 @@
+{
+  "schemaVersion": 1,
+  "id": "actionbartochat",
+  "version": "${version}",
+
+  "name": "Action Bar To Chat",
+  "description": "Reverts the annoying behaviour that makes system messages appear in your action bar.",
+  "authors": [
+    "Allink"
+  ],
+  "license": "MPL-2.0",
+  "environment": "client",
+  "entrypoints": {
+    "main": [
+      "me.allinkdev.actionbartochat.Mod"
+    ]
+  },
+  "mixins": [
+    "actionbartochat.mixins.json"
+  ],
+
+  "depends": {
+    "fabricloader": ">=0.14.6",
+    "fabric": "*",
+    "minecraft": "~1.19",
+    "java": ">=17"
+  }
+}
